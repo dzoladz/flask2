@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block nav %}
+    <ul>
+        {% for link in links %}
+        <li><a href="{{ links.href }}">{{ links.label }}</a></li>
+        {% endfor %}
+        <li><a href="#">a</a></li>
+    </ul>
+{% endblock %}
