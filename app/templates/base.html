@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>Flask2</title>
+        {% endif %}
+    </head>
+    <body>
+        {% block nav %}{% endblock %}
+        <hr>
+        <h1>Hello, {{ user.username }}!</h1>
+    </body>
+</html>
